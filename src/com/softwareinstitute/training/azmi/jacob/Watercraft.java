@@ -15,7 +15,6 @@ public abstract class Watercraft extends Vehicle{
 
     //////////Methods//////////
 
-    public
 
 
 }

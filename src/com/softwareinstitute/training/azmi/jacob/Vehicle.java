@@ -23,7 +23,11 @@ public abstract class Vehicle {
         System.out.println("Vehicle is off");
     }
 
-    public abstract void start();
+    public void start(){
+        System.out.println("Vehicle is on");
+    }
+
+    public abstract void park();
 
 
     public String getName() {
