@@ -48,7 +48,7 @@ public class Car extends FourWheeler implements IStore, ICarryPassenger{
     //////////Methods////////////
 
     @Override
-    public void storageCapacity(){
+    public void storageSize(){
         System.out.println("Car has medium storage capacity");
     }
 
