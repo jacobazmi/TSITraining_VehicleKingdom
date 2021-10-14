@@ -7,8 +7,8 @@ public abstract class FourWheeler extends Wheeled {
 
 
     ///////////Constructors//////////
-    public FourWheeler(String registration) {
-        super(registration);
+    public FourWheeler(String registration, String colour, String make, String model){
+        super(registration, colour, make, model);
     }
 
 

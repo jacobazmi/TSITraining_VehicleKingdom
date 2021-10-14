@@ -10,14 +10,33 @@ public class Motorbike extends TwoWheeler {
 
     ////////////Constructors//////////////
     public Motorbike(String colour, String make, String model, String registration){
-        super(registration);
-        this.colour = colour;
-        this.make = make;
-        this.model = model;
+        super(registration, colour, make, model);
     }
 
     ///////////Methods/////////////
 
 
+    public String getColour() {
+        return colour;
+    }
 
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
 }

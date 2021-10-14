@@ -9,9 +9,8 @@ public class ContainerShip extends Watercraft implements IStore{
     private String colour;
 
     ///////////Constructors//////////
-    public ContainerShip(String colour, String registration) {
-        super(registration);
-        this.colour = colour;
+    public ContainerShip(String colour, String make, String model, String registration){
+        super(registration, colour, make, model);
     }
 
 
@@ -26,4 +25,11 @@ public class ContainerShip extends Watercraft implements IStore{
         System.out.println("The container ship storage area is the back section of the ship");
     }
 
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
 }

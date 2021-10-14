@@ -9,8 +9,8 @@ public abstract class Wheeled extends Vehicle{
 
     //////////Constructors//////////
 
-    public Wheeled(String registration){
-        super(registration);
+    public Wheeled(String registration, String colour, String make, String model){
+        super(registration, colour, make, model);
     }
 
 

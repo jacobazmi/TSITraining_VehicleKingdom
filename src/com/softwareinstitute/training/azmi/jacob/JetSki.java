@@ -7,13 +7,19 @@ public class JetSki extends Watercraft{
 
 
     ///////////Constructors//////////////////
-    public JetSki(String colour, String registration) {
-        super(registration);
-        this.colour = colour;
+    public JetSki(String colour, String make, String model, String registration){
+        super(registration, colour, make, model);
     }
 
 
     ///////////////Methods/////////////////////
 
 
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
 }

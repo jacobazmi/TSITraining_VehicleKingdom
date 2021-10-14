@@ -2,7 +2,7 @@ package com.softwareinstitute.training.azmi.jacob;
 
 import javax.tools.ForwardingFileObject;
 
-public class Lorry extends FourWheeler {
+public class Lorry extends FourWheeler implements ICarryPassenger, IStore{
 
     //////////Attributes//////////
 
@@ -14,12 +14,8 @@ public class Lorry extends FourWheeler {
 
     //////////Constructors//////////
 
-    public Lorry(String colour, String size, String make, String model, String registration) {
-        super(registration);
-        this.colour = colour;
-        this.size = size;
-        this.make = make;
-        this.model = model;
+    public Lorry(String colour, String make, String model, String registration){
+        super(registration, colour, make, model);
     }
 
 
@@ -27,4 +23,55 @@ public class Lorry extends FourWheeler {
     //////////Methods////////////
 
 
+    @Override
+    public void passengerQty() {
+        System.out.println("A lorry can carry 1 passenger");
+    }
+
+    @Override
+    public void passengerPosition() {
+        System.out.println("The passenger sits next to the lorry driver");
+    }
+
+    @Override
+    public void storageSize() {
+        System.out.println("A lorry has a large storage area");
+    }
+
+    @Override
+    public void storageLocation() {
+        System.out.println("A lorry stores stuff in the trailer which is attached at the rear");
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
 }

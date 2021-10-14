@@ -6,14 +6,10 @@ public class Helicopter extends Aircraft implements IChangeAltitude, ICarryPasse
 
     private String colour;
     private String make;
-    private String model;
 
     //////////Constructors//////////
-    public Helicopter(String colour, String make, String model, String registration) {
-        super(registration);
-        this.colour = colour;
-        this.make = make;
-        this.model = model;
+    public Helicopter(String colour, String make, String model, String registration){
+        super(registration, colour, make, model);
     }
 
 
@@ -42,5 +38,21 @@ public class Helicopter extends Aircraft implements IChangeAltitude, ICarryPasse
     @Override
     public void passengerPosition() {
         System.out.println("The passengers sit in the cabin behind the pilot");
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
     }
 }
