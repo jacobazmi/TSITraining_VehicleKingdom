@@ -2,8 +2,8 @@ package com.softwareinstitute.training.azmi.jacob;
 
 public interface ICarryPassenger {
 
-    void quantity();
+    void passengerQty(); // how many passengers can be onboard
 
-    void position();
+    void passengerPosition(); // where is passenger in relation to driver
 
 }

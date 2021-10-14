@@ -2,9 +2,8 @@ package com.softwareinstitute.training.azmi.jacob;
 
 public interface IStore {
 
-    void capacity();
+    void storageCapacity(); // storage capacity in litres
 
-    void location();
+    void storageLocation(); // storage location relative to driver cabin
 
-    void separation();
 }

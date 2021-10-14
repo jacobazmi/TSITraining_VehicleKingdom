@@ -1,6 +1,6 @@
 package com.softwareinstitute.training.azmi.jacob;
 
-public class Car extends FourWheeler{
+public class Car extends FourWheeler implements IStore, ICarryPassenger{
 
     //////////Attributes//////////
 
@@ -26,6 +26,30 @@ public class Car extends FourWheeler{
 
 
     //////////Methods////////////
+
+    @Override
+    public void storageCapacity(){
+
+    }
+
+    @Override
+    public void storageLocation(){
+
+    }
+
+    @Override
+    public void passengerQty(){
+
+    }
+
+    @Override
+    public void passengerPosition(){
+
+    }
+
+
+
+    //Getters & Setters//
 
 
     public String getColour() {
