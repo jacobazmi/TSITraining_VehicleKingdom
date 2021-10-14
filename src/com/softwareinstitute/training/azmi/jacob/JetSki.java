@@ -1,4 +1,4 @@
 package com.softwareinstitute.training.azmi.jacob;
 
-public class Boat {
+public class JetSki {
 }
