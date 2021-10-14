@@ -18,12 +18,12 @@ public class Plane extends Aircraft implements IStore, ICarryPassenger{
 
 
     @Override
-    public String storageSize(){
+    public String getstorageSize(){
         return storageSize;
     }
 
     @Override
-    public String storageLocation(){
+    public String getstorageLocation(){
         return storageLocation;
     }
 

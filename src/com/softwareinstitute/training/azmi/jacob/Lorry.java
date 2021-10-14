@@ -36,12 +36,12 @@ public class Lorry extends FourWheeler implements ICarryPassenger, IStore{
     }
 
     @Override
-    public String storageSize(){
+    public String getstorageSize(){
         return storageSize;
     }
 
     @Override
-    public String storageLocation(){
+    public String getstorageLocation(){
         return storageLocation;
     }
 

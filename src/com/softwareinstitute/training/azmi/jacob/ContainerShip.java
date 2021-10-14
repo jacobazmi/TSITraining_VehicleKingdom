@@ -19,12 +19,12 @@ public class ContainerShip extends Watercraft implements IStore{
 
     ///////////Methods////////////
     @Override
-    public String storageSize(){
+    public String getstorageSize(){
         return storageSize;
     }
 
     @Override
-    public String storageLocation(){
+    public String getstorageLocation(){
         return storageLocation;
     }
 

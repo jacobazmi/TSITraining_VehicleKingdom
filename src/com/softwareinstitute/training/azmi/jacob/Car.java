@@ -26,18 +26,18 @@ public class Car extends FourWheeler implements IStore{
 
 
     //////////Methods////////////
-
     @Override
-    public String storageSize(){
+    public String getstorageSize(){
         return storageSize;
     }
 
     @Override
-    public String storageLocation(){
+    public String getstorageLocation(){
         return storageLocation;
     }
 
     public String getX(){
         return x;
     }
+
 }
