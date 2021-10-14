@@ -9,8 +9,11 @@ public class Helicopter extends Aircraft implements IChangeAltitude, ICarryPasse
     private String model;
 
     //////////Constructors//////////
-    public Helicopter(String registration) {
+    public Helicopter(String colour, String make, String model, String registration) {
         super(registration);
+        this.colour = colour;
+        this.make = make;
+        this.model = model;
     }
 
 

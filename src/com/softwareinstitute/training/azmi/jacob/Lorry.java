@@ -1,6 +1,8 @@
 package com.softwareinstitute.training.azmi.jacob;
 
-public class Lorry {
+import javax.tools.ForwardingFileObject;
+
+public class Lorry extends FourWheeler {
 
     //////////Attributes//////////
 
@@ -12,11 +14,8 @@ public class Lorry {
 
     //////////Constructors//////////
 
-    public Lorry(){
-
-    }
-
-    public Lorry(String colour, String size, String make, String model){
+    public Lorry(String colour, String size, String make, String model, String registration) {
+        super(registration);
         this.colour = colour;
         this.size = size;
         this.make = make;

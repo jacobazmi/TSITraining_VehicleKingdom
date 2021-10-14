@@ -8,6 +8,7 @@ public abstract class Vehicle {
 
     private String registration;
     private LocalDate manufactureDate;
+    private int random;
 
 
     //////////Constructors//////////
@@ -43,4 +44,5 @@ public abstract class Vehicle {
     public void setManufactureDate(LocalDate manufactureDate) {
         this.manufactureDate = manufactureDate;
     }
+
 }
