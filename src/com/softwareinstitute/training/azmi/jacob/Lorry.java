@@ -13,6 +13,8 @@ public class Lorry extends FourWheeler implements ICarryPassenger, IStore{
 
     private String storageSize = "Car has medium storage capacity";
     private String storageLocation = "Boot at back of lorry";
+    private String passengerQty;
+    private String passengerPosition;
 
     //////////Constructors//////////
 
@@ -26,22 +28,22 @@ public class Lorry extends FourWheeler implements ICarryPassenger, IStore{
 
 
     @Override
-    public void passengerQty() {
-        System.out.println("The passenger sits next to the lorry driver");
+    public String passengerQty() {
+        return passengerQty;
     }
 
     @Override
-    public void passengerPosition() {
-        System.out.println("The passenger sits next to the lorry driver");
+    public String passengerPosition() {
+        return passengerPosition;
     }
 
     @Override
-    public String getstorageSize(){
+    public String storageSize(){
         return storageSize;
     }
 
     @Override
-    public String getstorageLocation(){
+    public String storageLocation(){
         return storageLocation;
     }
 

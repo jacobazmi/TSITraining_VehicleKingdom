@@ -2,8 +2,8 @@ package com.softwareinstitute.training.azmi.jacob;
 
 public interface ICarryPassenger {
 
-    void passengerQty();
+    String passengerQty();
 
-    void passengerPosition();
+    String passengerPosition();
 
 }

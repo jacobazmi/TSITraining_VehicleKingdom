@@ -1,7 +1,7 @@
 package com.softwareinstitute.training.azmi.jacob;
 
 
-public class Car extends FourWheeler implements IStore{
+public class Car extends FourWheeler implements IStore, ICarryPassenger{
 
     //////////Attributes//////////
 
@@ -11,14 +11,16 @@ public class Car extends FourWheeler implements IStore{
 
     private String storageSize;
     private String storageLocation;
-    private String x;
+    private String passengerQty;
+    private String passengerPosition;
 
     //////////Constructors//////////
-    public Car(String colour, String make, String model, String registration, String x){
+    public Car(String colour, String make, String model, String registration){
         super(registration, colour, make, model);
         this.storageSize = "Car has medium storage capacity";
         this.storageLocation = "Boot at back of car";
-        this.x = x;
+        this.passengerQty = "Car has 4 passenger seats";
+        this.passengerPosition = "Car passengers share cabin with driver";
     }
 
 
@@ -27,17 +29,22 @@ public class Car extends FourWheeler implements IStore{
 
     //////////Methods////////////
     @Override
-    public String getstorageSize(){
+    public String storageSize(){
         return storageSize;
     }
 
     @Override
-    public String getstorageLocation(){
+    public String storageLocation(){
         return storageLocation;
     }
 
-    public String getX(){
-        return x;
+    @Override
+    public String passengerQty() {
+        return passengerQty;
     }
 
+    @Override
+    public String passengerPosition() {
+        return passengerPosition;
+    }
 }

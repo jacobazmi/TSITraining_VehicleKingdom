@@ -6,38 +6,46 @@ public class Helicopter extends Aircraft implements IChangeAltitude, ICarryPasse
 
     private String colour;
     private String make;
+    private String passengerQty;
+    private String passengerPosition;
+    private String moveUp;
+    private String moveDown;
+    private String land;
 
     //////////Constructors//////////
     public Helicopter(String colour, String make, String model, String registration){
         super(registration, colour, make, model);
+        this.moveUp = "Helicopter can move directly up through air";
+        this.moveDown = "Helicopter can move directly down through air";
+        this.land = "Helicopter can land on helipad";
     }
 
 
     /////////Methods///////////
 
     @Override
-    public void moveUp(){
-        System.out.println("A helicopter can move up in the air");
+    public String moveUp(){
+        return moveUp;
     }
 
     @Override
-    public void moveDown(){
-        System.out.println("A helicopter can move down in the air");
+    public String moveDown(){
+        return moveDown;
     }
 
     @Override
-    public void land(){
-        System.out.println("A helicopter can land on helipads");
+    public String land(){
+        return land;
     }
 
     @Override
-    public void passengerQty() {
-        System.out.println("A helicopter can hold 4 passengers");
+    public String passengerQty() {
+        return passengerQty;
     }
 
     @Override
-    public void passengerPosition() {
-        System.out.println("The passengers sit in the cabin behind the pilot");
+    public String passengerPosition() {
+        return passengerPosition;
     }
 
     public String getColour() {

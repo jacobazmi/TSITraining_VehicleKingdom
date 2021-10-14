@@ -9,32 +9,37 @@ public class Plane extends Aircraft implements IStore, ICarryPassenger{
     private String storageSize = "Car has medium storage capacity";
     private String storageLocation = "Boot at back of car";
 
+    private String passengerQty;
+    private String passengerPosition;
+
     /////////////Constructors/////////////////
     public Plane(String colour, String make, String model, String registration){
         super(registration, colour, make, model);
+        this.storageSize = "Plane has large storage capacity";
+        this.storageLocation = "Plane storage is beneath passenger cabin";
     }
 
     ////////////Methods///////////////////
 
 
     @Override
-    public String getstorageSize(){
+    public String storageSize(){
         return storageSize;
     }
 
     @Override
-    public String getstorageLocation(){
+    public String storageLocation(){
         return storageLocation;
     }
 
     @Override
-    public void passengerQty() {
-        System.out.println("A plane can carry over 100 people");
+    public String passengerQty() {
+        return passengerQty;
     }
 
     @Override
-    public void passengerPosition() {
-        System.out.println("A plane's passenger compartment is separate from the pilot's cockpit");
+    public String passengerPosition() {
+        return passengerPosition;
     }
 
     public String getColour() {

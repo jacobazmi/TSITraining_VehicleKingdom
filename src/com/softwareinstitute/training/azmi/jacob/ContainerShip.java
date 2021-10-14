@@ -8,23 +8,25 @@ public class ContainerShip extends Watercraft implements IStore{
 
     private String colour;
 
-    private String storageSize = "Car has medium storage capacity";
-    private String storageLocation = "Boot at back of car";
+    private String storageSize;
+    private String storageLocation;
 
     ///////////Constructors//////////
     public ContainerShip(String colour, String make, String model, String registration){
         super(registration, colour, make, model);
+        this.storageSize = "Ship has large storage capacity";
+        this.storageLocation = "Ship load stored at rear of ship";
     }
 
 
     ///////////Methods////////////
     @Override
-    public String getstorageSize(){
+    public String storageSize(){
         return storageSize;
     }
 
     @Override
-    public String getstorageLocation(){
+    public String storageLocation(){
         return storageLocation;
     }
 

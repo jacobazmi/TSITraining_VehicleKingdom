@@ -2,10 +2,10 @@ package com.softwareinstitute.training.azmi.jacob;
 
 public interface IChangeAltitude {
 
-    void moveUp();
+    String moveUp();
 
-    void moveDown();
+    String moveDown();
 
-    void land();
+    String land();
 
 }

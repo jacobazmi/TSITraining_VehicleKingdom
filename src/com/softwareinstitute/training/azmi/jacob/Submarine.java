@@ -5,29 +5,35 @@ public class Submarine extends Watercraft implements IChangeAltitude{
     ///////////Attributes////////////
 
     private String colour;
+    private String moveUp;
+    private String moveDown;
+    private String land;
 
 
     ///////////Constructors///////////
     public Submarine(String colour, String make, String model, String registration){
         super(registration, colour, make, model);
+        this.moveUp = "Submarine can move directly up through water";
+        this.moveDown = "Submarine can move directly down through water";
+        this.land = "Submarine can surface on open water";
     }
 
     //////////Methods///////////
 
 
     @Override
-    public void moveUp() {
-        System.out.println("A submarine can move up through water");
+    public String moveUp(){
+        return moveUp;
     }
 
     @Override
-    public void moveDown() {
-        System.out.println("A submarine can move down through water");
+    public String moveDown(){
+        return moveDown;
     }
 
     @Override
-    public void land() {
-        System.out.println("A submarine can surface anywhere with open water");
+    public String land(){
+        return land;
     }
 
     public String getColour() {
