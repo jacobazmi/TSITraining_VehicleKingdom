@@ -1,6 +1,6 @@
 package com.softwareinstitute.training.azmi.jacob;
 
-public interface IMoveVertical {
+public interface IChangeAltitude {
 
     void moveUp();
 

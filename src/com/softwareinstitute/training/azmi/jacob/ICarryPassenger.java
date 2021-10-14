@@ -5,4 +5,5 @@ public interface ICarryPassenger {
     void quantity();
 
     void position();
+
 }

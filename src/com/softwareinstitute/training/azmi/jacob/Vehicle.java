@@ -6,14 +6,14 @@ public abstract class Vehicle {
 
     //////////Attributes//////////
 
-    private String name;
+    private String registration;
     private LocalDate manufactureDate;
 
 
     //////////Constructors//////////
 
-    public Vehicle(String name){
-        this.name = name;
+    public Vehicle(String registration){
+        this.registration = registration;
     }
 
 
@@ -27,19 +27,17 @@ public abstract class Vehicle {
         System.out.println("Vehicle is on");
     }
 
-    public abstract void park();
 
-
-    public String getName() {
-        return name;
+    public String getRegistration() {
+        return registration;
     }
 
     public LocalDate getManufactureDate() {
         return manufactureDate;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRegistration(String registration) {
+        this.registration = registration;
     }
 
     public void setManufactureDate(LocalDate manufactureDate) {
