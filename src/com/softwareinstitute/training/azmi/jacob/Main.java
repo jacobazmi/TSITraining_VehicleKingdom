@@ -7,9 +7,9 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Vehicle> vehicles = new ArrayList<>();
 
-        Car car1 = new Car("red","Ford","Fiesta","BK56EEP");
-        Car car2 = new Car("blue","VW","Polo","BB50GGT");
-        Car car3 = new Car("black","VW","Golf","CB15RPD");
+        Car car1 = new Car("red","Ford","Fiesta","BK56EEP","4");
+        Car car2 = new Car("blue","VW","Polo","BB50GGT","3");
+        Car car3 = new Car("black","VW","Golf","CB15RPD","4");
         Submarine sub1 = new Submarine("yellow","BoatsRUs","BigBoi","18493");
 
         vehicles.add(car1);
@@ -17,8 +17,8 @@ public class Main {
         vehicles.add(car3);
 
 
-        for ( int i = 0; i< vehicles.size(); i++){
-            System.out.println(vehicles.get(i).getRegistration() + " " + vehicles.get(i).getColour() + " " +  vehicles.get(i).getMake() + " " +  vehicles.get(i).getModel());
+        for (Vehicle vehicle : vehicles) {
+            System.out.println(vehicle.getRegistration() + " " + vehicle.getColour() + " " + vehicle.getMake() + " " + vehicle.getModel());
         }
 
         System.out.println(car3.storageSize());
