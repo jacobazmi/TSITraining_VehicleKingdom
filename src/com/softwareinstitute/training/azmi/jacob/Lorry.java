@@ -25,4 +25,6 @@ public class Lorry extends FourWheeler {
 
 
     //////////Methods////////////
+
+
 }

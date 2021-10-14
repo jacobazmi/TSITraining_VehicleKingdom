@@ -14,4 +14,6 @@ public class JetSki extends Watercraft{
 
 
     ///////////////Methods/////////////////////
+
+
 }

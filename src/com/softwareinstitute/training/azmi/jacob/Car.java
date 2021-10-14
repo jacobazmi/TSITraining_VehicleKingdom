@@ -59,12 +59,12 @@ public class Car extends FourWheeler implements IStore, ICarryPassenger{
 
     @Override
     public void passengerQty(){
-        int passengers = 4;
+        System.out.println("A car has space for 4 passengers");
     }
 
     @Override
     public void passengerPosition(){
-        String position = "Within cabin";
+        System.out.println("Passenger seats are next to and behind the driver");
     }
 
 

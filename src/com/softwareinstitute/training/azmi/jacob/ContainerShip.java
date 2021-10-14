@@ -1,6 +1,8 @@
 package com.softwareinstitute.training.azmi.jacob;
 
-public class ContainerShip extends Watercraft {
+import java.sql.SQLOutput;
+
+public class ContainerShip extends Watercraft implements IStore{
 
     //////////Attributes//////////
 
@@ -14,4 +16,14 @@ public class ContainerShip extends Watercraft {
 
 
     ///////////Methods////////////
+    @Override
+    public void storageSize(){
+        System.out.println("The container ship can store lots of storage containers");
+    }
+
+    @Override
+    public void storageLocation(){
+        System.out.println("The container ship storage area is the back section of the ship");
+    }
+
 }
