@@ -11,12 +11,32 @@ public class Car extends FourWheeler implements IStore, ICarryPassenger{
 
 
     //////////Constructors//////////
-
     public Car(){
+        this("Grey");
+    }
 
+    public Car(String colour){
+        this(colour, 5);
+    }
+
+    public Car(String colour, int doors){
+        this(colour, doors, "Ford");
+    }
+
+    public Car(String colour, int doors, String make){
+        this(colour, doors, make, "Fiesta");
     }
 
     public Car(String colour, int doors, String make, String model){
+        super("XX00 XXX");
+        this.colour = colour;
+        this.doors = doors;
+        this.make = make;
+        this.model = model;
+    }
+
+    public Car(String colour, int doors, String make, String model, String registration){
+        super(registration);
         this.colour = colour;
         this.doors = doors;
         this.make = make;

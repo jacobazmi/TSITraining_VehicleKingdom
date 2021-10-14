@@ -6,4 +6,6 @@ public interface IChangeAltitude {
 
     void moveDown();
 
+    void land();
+
 }
