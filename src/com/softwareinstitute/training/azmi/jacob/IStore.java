@@ -2,8 +2,8 @@ package com.softwareinstitute.training.azmi.jacob;
 
 public interface IStore {
 
-    void storageSize();
+    public String storageSize();
 
-    void storageLocation();
+    public String storageLocation();
 
 }

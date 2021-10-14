@@ -6,6 +6,9 @@ public class Plane extends Aircraft implements IStore, ICarryPassenger{
 
     private String colour;
 
+    private String storageSize = "Car has medium storage capacity";
+    private String storageLocation = "Boot at back of car";
+
     /////////////Constructors/////////////////
     public Plane(String colour, String make, String model, String registration){
         super(registration, colour, make, model);
@@ -15,13 +18,13 @@ public class Plane extends Aircraft implements IStore, ICarryPassenger{
 
 
     @Override
-    public void storageSize() {
-        System.out.println("A plane has a large storage area");
+    public String storageSize(){
+        return storageSize;
     }
 
     @Override
-    public void storageLocation() {
-        System.out.println("A plane's storage area is under the passenger compartment");
+    public String storageLocation(){
+        return storageLocation;
     }
 
     @Override

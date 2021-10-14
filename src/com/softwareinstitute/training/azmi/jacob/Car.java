@@ -1,6 +1,7 @@
 package com.softwareinstitute.training.azmi.jacob;
 
-public class Car extends FourWheeler implements IStore, ICarryPassenger{
+
+public class Car extends FourWheeler implements IStore{
 
     //////////Attributes//////////
 
@@ -8,11 +9,18 @@ public class Car extends FourWheeler implements IStore, ICarryPassenger{
     private String make;
     private String model;
 
+    private String storageSize;
+    private String storageLocation;
+    private String x;
 
     //////////Constructors//////////
-    public Car(String colour, String make, String model, String registration){
+    public Car(String colour, String make, String model, String registration, String x){
         super(registration, colour, make, model);
+        this.storageSize = "Car has medium storage capacity";
+        this.storageLocation = "Boot at back of car";
+        this.x = x;
     }
+
 
 
 
@@ -20,51 +28,16 @@ public class Car extends FourWheeler implements IStore, ICarryPassenger{
     //////////Methods////////////
 
     @Override
-    public void storageSize(){
-        System.out.println("Car has medium storage capacity");
+    public String storageSize(){
+        return storageSize;
     }
 
     @Override
-    public void storageLocation(){
-        System.out.println("Boot at back of car");
+    public String storageLocation(){
+        return storageLocation;
     }
 
-    @Override
-    public void passengerQty(){
-        System.out.println("A car has space for 4 passengers");
-    }
-
-    @Override
-    public void passengerPosition(){
-        System.out.println("Passenger seats are next to and behind the driver");
-    }
-
-
-
-    //Getters & Setters//
-
-
-    public String getColour() {
-        return colour;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setColour(String colour) {
-        this.colour = colour;
-    }
-
-    public void setMake(String make) {
-        this.make = make;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
+    public String getX(){
+        return x;
     }
 }

@@ -8,6 +8,9 @@ public class ContainerShip extends Watercraft implements IStore{
 
     private String colour;
 
+    private String storageSize = "Car has medium storage capacity";
+    private String storageLocation = "Boot at back of car";
+
     ///////////Constructors//////////
     public ContainerShip(String colour, String make, String model, String registration){
         super(registration, colour, make, model);
@@ -16,13 +19,13 @@ public class ContainerShip extends Watercraft implements IStore{
 
     ///////////Methods////////////
     @Override
-    public void storageSize(){
-        System.out.println("The container ship can store lots of storage containers");
+    public String storageSize(){
+        return storageSize;
     }
 
     @Override
-    public void storageLocation(){
-        System.out.println("The container ship storage area is the back section of the ship");
+    public String storageLocation(){
+        return storageLocation;
     }
 
     public String getColour() {
