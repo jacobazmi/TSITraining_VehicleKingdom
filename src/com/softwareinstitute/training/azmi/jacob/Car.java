@@ -11,11 +11,11 @@ public class Car extends FourWheeler implements IStore, ICarryPassenger{
 
     private String storageSize;
     private String storageLocation;
-    private String passengerQty;
+    private int passengerQty;
     private String passengerPosition;
 
     //////////Constructors//////////
-    public Car(String colour, String make, String model, String registration, String passengerQty){
+    public Car(String colour, String make, String model, String registration, int passengerQty){
         super(registration, colour, make, model);
         this.storageSize = "Car has medium storage capacity";
         this.storageLocation = "Boot at back of car";
@@ -39,7 +39,7 @@ public class Car extends FourWheeler implements IStore, ICarryPassenger{
     }
 
     @Override
-    public String passengerQty() {
+    public int passengerQty() {
         return passengerQty;
     }
 

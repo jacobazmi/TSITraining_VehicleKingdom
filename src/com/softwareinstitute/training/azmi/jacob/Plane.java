@@ -9,7 +9,7 @@ public class Plane extends Aircraft implements IStore, ICarryPassenger{
     private String storageSize = "Car has medium storage capacity";
     private String storageLocation = "Boot at back of car";
 
-    private String passengerQty;
+    private int passengerQty;
     private String passengerPosition;
 
     /////////////Constructors/////////////////
@@ -33,7 +33,7 @@ public class Plane extends Aircraft implements IStore, ICarryPassenger{
     }
 
     @Override
-    public String passengerQty() {
+    public int passengerQty() {
         return passengerQty;
     }
 

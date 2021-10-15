@@ -2,7 +2,7 @@ package com.softwareinstitute.training.azmi.jacob;
 
 public interface ICarryPassenger {
 
-    String passengerQty();
+    int passengerQty();
 
     String passengerPosition();
 

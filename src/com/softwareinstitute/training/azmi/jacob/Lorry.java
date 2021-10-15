@@ -11,15 +11,17 @@ public class Lorry extends FourWheeler implements ICarryPassenger, IStore{
     private String make;
     private String model;
 
-    private String storageSize = "Car has medium storage capacity";
-    private String storageLocation = "Boot at back of lorry";
-    private String passengerQty;
+    private String storageSize;
+    private String storageLocation;
+    private int passengerQty;
     private String passengerPosition;
 
     //////////Constructors//////////
 
     public Lorry(String colour, String make, String model, String registration){
         super(registration, colour, make, model);
+        this.storageSize = "Lorry has large storage capacity";
+        this.storageLocation = "Lorry storage is in a unit connected to the rear of the cab";
     }
 
 
@@ -28,7 +30,7 @@ public class Lorry extends FourWheeler implements ICarryPassenger, IStore{
 
 
     @Override
-    public String passengerQty() {
+    public int passengerQty() {
         return passengerQty;
     }
 
