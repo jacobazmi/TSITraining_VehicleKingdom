@@ -9,8 +9,8 @@ public class Motorbike extends TwoWheeler {
     private String model;
 
     ////////////Constructors//////////////
-    public Motorbike(String colour, String make, String model, String registration){
-        super(registration, colour, make, model);
+    public Motorbike(String colour, String make, String model, int wheelSize, String registration){
+        super(registration, colour, make, model, wheelSize);
     }
 
     ///////////Methods/////////////

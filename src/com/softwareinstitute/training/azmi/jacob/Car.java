@@ -15,8 +15,8 @@ public class Car extends FourWheeler implements IStore, ICarryPassenger{
     private String passengerPosition;
 
     //////////Constructors//////////
-    public Car(String colour, String make, String model, String registration, int passengerQty){
-        super(registration, colour, make, model);
+    public Car(String colour, String make, String model, String registration, int wheelSize, String driveAxle, String transmission, int passengerQty){
+        super(registration, colour, make, model, wheelSize, driveAxle, transmission);
         this.storageSize = "Car has medium storage capacity";
         this.storageLocation = "Boot at back of car";
         this.passengerQty = passengerQty;
