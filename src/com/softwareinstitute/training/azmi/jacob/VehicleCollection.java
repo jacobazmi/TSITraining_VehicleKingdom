@@ -7,9 +7,6 @@ public class VehicleCollection {
 
     private ArrayList<Vehicle> vehicles;
 
-    public ArrayList<Vehicle> getVehicles() {
-        return vehicles;
-    }
 
     ////////Constructors////////////////
 
@@ -18,4 +15,8 @@ public class VehicleCollection {
     }
 
     ///////////Methods///////////////
+
+    public ArrayList<Vehicle> getVehicles() {
+        return vehicles;
+    }
 }
